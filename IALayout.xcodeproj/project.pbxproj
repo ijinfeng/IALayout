@@ -7,22 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3726B45D223FF3C7008EDED6 /* UIView+IALayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3726B45C223FF3C7008EDED6 /* UIView+IALayout.m */; };
-		3726B460223FF4F5008EDED6 /* IAConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3726B45F223FF4F5008EDED6 /* IAConstraintMaker.m */; };
 		3729A334223CF3F5001955B3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A333223CF3F5001955B3 /* AppDelegate.m */; };
 		3729A337223CF3F5001955B3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A336223CF3F5001955B3 /* ViewController.m */; };
 		3729A33A223CF3F5001955B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3729A338223CF3F5001955B3 /* Main.storyboard */; };
 		3729A33C223CF3F7001955B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3729A33B223CF3F7001955B3 /* Assets.xcassets */; };
 		3729A33F223CF3F7001955B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3729A33D223CF3F7001955B3 /* LaunchScreen.storyboard */; };
 		3729A342223CF3F8001955B3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A341223CF3F8001955B3 /* main.m */; };
-		3729A34D223E2B85001955B3 /* IAFrameMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 3729A34C223E2B85001955B3 /* IAFrameMaker.m */; };
+		372B55262241404200C40BF8 /* UIView+IAFrameMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 372B55252241404200C40BF8 /* UIView+IAFrameMaker.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3726B45B223FF3C7008EDED6 /* UIView+IALayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+IALayout.h"; sourceTree = "<group>"; };
-		3726B45C223FF3C7008EDED6 /* UIView+IALayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+IALayout.m"; sourceTree = "<group>"; };
-		3726B45E223FF4F5008EDED6 /* IAConstraintMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAConstraintMaker.h; sourceTree = "<group>"; };
-		3726B45F223FF4F5008EDED6 /* IAConstraintMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAConstraintMaker.m; sourceTree = "<group>"; };
 		3729A32F223CF3F5001955B3 /* IALayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IALayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3729A332223CF3F5001955B3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		3729A333223CF3F5001955B3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,8 +27,8 @@
 		3729A33E223CF3F7001955B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3729A340223CF3F7001955B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3729A341223CF3F8001955B3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3729A34B223E2B85001955B3 /* IAFrameMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IAFrameMaker.h; sourceTree = "<group>"; };
-		3729A34C223E2B85001955B3 /* IAFrameMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IAFrameMaker.m; sourceTree = "<group>"; };
+		372B55242241404200C40BF8 /* UIView+IAFrameMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+IAFrameMaker.h"; sourceTree = "<group>"; };
+		372B55252241404200C40BF8 /* UIView+IAFrameMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+IAFrameMaker.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,12 +65,8 @@
 				3729A333223CF3F5001955B3 /* AppDelegate.m */,
 				3729A335223CF3F5001955B3 /* ViewController.h */,
 				3729A336223CF3F5001955B3 /* ViewController.m */,
-				3726B45B223FF3C7008EDED6 /* UIView+IALayout.h */,
-				3726B45C223FF3C7008EDED6 /* UIView+IALayout.m */,
-				3729A34B223E2B85001955B3 /* IAFrameMaker.h */,
-				3729A34C223E2B85001955B3 /* IAFrameMaker.m */,
-				3726B45E223FF4F5008EDED6 /* IAConstraintMaker.h */,
-				3726B45F223FF4F5008EDED6 /* IAConstraintMaker.m */,
+				372B55242241404200C40BF8 /* UIView+IAFrameMaker.h */,
+				372B55252241404200C40BF8 /* UIView+IAFrameMaker.m */,
 				3729A338223CF3F5001955B3 /* Main.storyboard */,
 				3729A33B223CF3F7001955B3 /* Assets.xcassets */,
 				3729A33D223CF3F7001955B3 /* LaunchScreen.storyboard */,
@@ -157,10 +147,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3729A337223CF3F5001955B3 /* ViewController.m in Sources */,
-				3729A34D223E2B85001955B3 /* IAFrameMaker.m in Sources */,
+				372B55262241404200C40BF8 /* UIView+IAFrameMaker.m in Sources */,
 				3729A342223CF3F8001955B3 /* main.m in Sources */,
-				3726B460223FF4F5008EDED6 /* IAConstraintMaker.m in Sources */,
-				3726B45D223FF3C7008EDED6 /* UIView+IALayout.m in Sources */,
 				3729A334223CF3F5001955B3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

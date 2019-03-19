@@ -1,12 +1,40 @@
 //
-//  IAFrameMaker.m
+//  UIView+IAFrameMaker.m
 //  IALayout
 //
-//  Created by 金峰 on 2019/3/17.
+//  Created by 金峰 on 2019/3/19.
 //  Copyright © 2019年 JinFeng. All rights reserved.
 //
 
-#import "IAFrameMaker.h"
+#import "UIView+IAFrameMaker.h"
+#import <objc/runtime.h>
+
+@implementation UIView (IAFrameMaker)
+
+- (IAFrameMaker *)ia_frame {
+    IAFrameMaker *_maker = objc_getAssociatedObject(self, _cmd);
+    if (!_maker) {
+        _maker = [[IAFrameMaker alloc] initWithView:self];
+        objc_setAssociatedObject(self, _cmd, _maker, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return _maker;
+}
+
+- (void)ia_frameMake:(void (^)(IAFrameMaker * _Nonnull))make {
+    if (make) {
+        IAFrameMaker *_maker = objc_getAssociatedObject(self, _cmd);
+        if (!_maker) {
+            _maker = [[IAFrameMaker alloc] initWithView:self];
+            objc_setAssociatedObject(self, _cmd, _maker, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        }
+        make(_maker);
+        _maker.install();
+    }
+}
+
+@end
+
+
 
 @interface IAFrameMaker ()
 
@@ -92,6 +120,12 @@
         self.w = w;
         self.h = h;
         return self;
+    };
+}
+
+- (void (^)(void))reset {
+    return ^ {
+        self.view.frame = CGRectZero;
     };
 }
 
